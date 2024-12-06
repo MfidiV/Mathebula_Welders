@@ -1,0 +1,285 @@
+/* General Styles */
+.about-us {
+  background-color: #f9f9f9;
+  padding: 60px 20px; /* Reduced padding to avoid too much space */
+  font-family: "Arial", sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+  max-width: 1200px; /* Add max-width to center content */
+  margin: 0 auto;
+  overflow: hidden; /* Prevents content from spilling over */
+}
+
+/* Header Section */
+.about-us-header {
+  text-align: center;
+  margin-bottom: 30px; /* Reduced margin to bring the content closer */
+}
+
+.about-us-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.about-us-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+  font-style: italic;
+  margin-bottom: 20px; /* Reduced bottom margin */
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out 0.5s forwards;
+}
+
+/* About Us Content */
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem; /* Reduced gap for a more compact layout */
+  margin-bottom: 40px; /* Reduced bottom margin */
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out 1s forwards;
+}
+
+.about-us-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-us-text h2 {
+  font-size: 2.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px; /* Reduced margin */
+  font-weight: 600;
+  animation: fadeInUp 1s ease-out 1s;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 20px; /* Added bottom margin for spacing between paragraphs */
+}
+
+.about-us-video {
+  flex: 1;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-out 1.5s;
+}
+
+.video-container {
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Services Section */
+.about-us-services {
+  background-color: #ecf0f1;
+  padding: 50px 20px; /* Reduced padding */
+  text-align: center;
+  margin-bottom: 60px; /* Slightly increased bottom margin for spacing */
+  animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.about-us-services h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px; /* Adjusted bottom margin */
+  font-weight: 600;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out 2.5s forwards;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Added bottom margin for spacing */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px; /* Slightly reduced image height */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin: 40px 0; /* Adjusted margin to remove too much space */
+  text-align: center;
+  animation: fadeInUp 1s ease-out 3s forwards;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px; /* Adjusted margin */
+  font-weight: 600;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out 3.5s forwards;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Adjusted width to use more space */
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Added bottom margin for spacing */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Call-to-Action Section */
+.cta {
+  background-color: #e67e22;
+  color: white;
+  padding: 30px 20px; /* Reduced padding */
+  text-align: center;
+  margin-top: 60px; /* Adjusted top margin for spacing */
+  animation: fadeInUp 1s ease-out 4s forwards;
+}
+
+.cta h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px; /* Reduced margin for more compact spacing */
+}
+
+.cta-button {
+  background-color: #34495e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2c3e50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-video iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

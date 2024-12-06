@@ -1,0 +1,172 @@
+/* src/Home.css */
+
+/* General Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Carousel Section */
+.home-carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+.home-carousel .carousel-caption h3 {
+  font-size: 2.5rem;
+  color: #f39c12;
+}
+
+.home-carousel .carousel-caption p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Specific Styles for the Second Carousel Item */
+.home-carousel .carousel-item:nth-child(3) .carousel-caption {
+  text-align: left; /* Align the text to the left */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Slightly darker background for better contrast */
+  padding: 40px 50px; /* Add more padding for spacing */
+  max-width: 600px; /* Increase the width for better readability */
+  position: absolute;
+  top: 50%; /* Center the caption vertically */
+  left: 90px; /* Keep some space from the left */
+  transform: translateY(-50%); /* Vertically center the caption */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  backdrop-filter: blur(10px); /* Subtle blur effect on the background */
+  transition: all 0.3s ease-in-out; /* Smooth transition effect for hover */
+}
+
+/* Caption Title Styles */
+.home-carousel .carousel-item:nth-child(3) .carousel-caption h3 {
+  font-size: 2rem; /* Larger font size for the heading */
+  color: #f39c12; /* Golden color for the title */
+  font-weight: bold; /* Bold for better emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for modern look */
+  margin-bottom: 15px; /* Space between the title and description */
+  text-transform: uppercase; /* Make the title uppercase */
+}
+
+/* Caption Description Styles */
+.home-carousel .carousel-item:nth-child(3) .carousel-caption p {
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #ecf0f1; /* Light grayish color for the text */
+  line-height: 1.5; /* Increase line height for readability */
+  font-style: italic; /* Add a slight italic style for a more artistic feel */
+}
+
+/* Hover Effect on Caption */
+.home-carousel .carousel-item:nth-child(3):hover .carousel-caption {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darken background slightly on hover */
+  transform: translateY(-50%) scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Optional: Add a subtle animation */
+.home-carousel .carousel-item:nth-child(2) .carousel-caption {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+  background-color: #ecf0f1;
+  padding: 60px 0;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.services .service-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.services .service-card h3 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.services .service-card p {
+  color: #7f8c8d;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services .service-card {
+  flex: 1;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #34495e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

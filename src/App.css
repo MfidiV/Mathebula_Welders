@@ -1,0 +1,69 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0MMM;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Clean sans-serif font */
+  background-color: #ecf0f1; /* Light gray background for the body */
+  color: #2c3e50; /* Dark text color for contrast */
+  line-height: 1.6; /* Improve readability */
+  min-height: 100vh; /* Full height to the body */
+  padding: 20px; /* Add some padding around the body content */
+  margin: 0 40px; /* Reset margin */
+}
+
+.container {
+  max-width: 1200px; /* Limit content width for larger screens */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px; /* Add padding inside the container */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.5rem; /* Add space between paragraphs */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent elements */
+}
+
+/* Box Shadow for Elements */
+.box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Scrollbar Styling */
+html {
+  scroll-behavior: smooth; /* Smooth scroll when navigating the page */
+}
+
+/* Reset Button Styling */
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer; /* Makes buttons clickable */
+}
